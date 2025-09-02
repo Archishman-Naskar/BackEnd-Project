@@ -32,3 +32,13 @@ videoSchema.plugin(mongooseAggregatePaginate) ->this thing is for pipeline thing
 ##How to upload file in backend | Multer
   npm i cloudinary
   npm i multer
+  doing inside D:\AAA\CompleateWeb\JSBackEnd\Project\src\middlewares\multer.middleware.js
+  D:\AAA\CompleateWeb\JSBackEnd\Project\src\utils\cloudinary.js
+  ->User uploads something to then 
+  i-> we first keep it our local storage using multer
+  ii-> then from local storage we upload it to cloudinary
+  iii-> We can directly take it from user using multer and without storing it in the local storage we acn upload it to the cloudinary but it standard practice we keep it in local storage in case of faliure
+  iv-> as soon as upload is finished we deleat the file from local storage using 
+  fs.unlinkSync()  , fs is inbuit module in js used for this type of file handaling
+  v-> now we ste up the cloudinary.js
+  vi->now we ste up the multer.middleware.js
