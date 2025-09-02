@@ -15,8 +15,8 @@ installed crocs and cockie-parser and in the app.js what ever is written is defa
 
 in utils->asyncHandler.js we cerated a tamplete function of production grade
 
-Using Error class we created ApiError function in utils->ApiError.js
-This function handels the Errors is written like tamplate
+Using Error class(we get it readymade) we created ApiError function in utils->ApiError.js
+This function handels the Errors is written it is also like tamplate
 
 Similar of that created ApiResponse.js
 
@@ -28,3 +28,7 @@ then added isPasswordCorrect,generateAccessToken,generateRefreshToken methodes t
 using userSchema.methods
 
 videoSchema.plugin(mongooseAggregatePaginate) ->this thing is for pipeline thing i still don't know about it.
+
+##How to upload file in backend | Multer
+  npm i cloudinary
+  npm i multer
