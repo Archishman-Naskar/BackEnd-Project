@@ -20,4 +20,11 @@ This function handels the Errors is written like tamplate
 
 Similar of that created ApiResponse.js
 
-User and video model with hooks and JWT
+#User and video model with hooks and JWT
+installed bcrypt,jsonwebtoken,mongoose-aggregate-paginate-v2 and seted up user vedio model
+added a middleware to userSchema using userSchema.pre() an inbuilt function we get
+
+then added isPasswordCorrect,generateAccessToken,generateRefreshToken methodes to userSchema
+using userSchema.methods
+
+videoSchema.plugin(mongooseAggregatePaginate) ->this thing is for pipeline thing i still don't know about it.
