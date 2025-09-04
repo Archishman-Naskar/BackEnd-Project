@@ -42,3 +42,15 @@ videoSchema.plugin(mongooseAggregatePaginate) ->this thing is for pipeline thing
   fs.unlinkSync()  , fs is inbuit module in js used for this type of file handaling
   v-> now we ste up the cloudinary.js
   vi->now we ste up the multer.middleware.js
+
+## Now What Is This HTTP or HTTPS
+  ## We will know about HTTP (HTTP and HTTPS are bassicaly same HTTPS just adds an additional layer of security)
+
+
+## Now we create user.controller.js
+   -> in user.controller.js create a function named registerUser usnig asyncHandler
+   -> in app.js => import userRouter from './routes/user.routes.js'
+   -> in app.js => app.use("/api/v1/users", userRouter)
+     so when we send request to localHost:8000/api/v1/users it gives the controll to the userRouter 
+     Taking the controll what after /api/v1/users like /api/v1/users/register or 
+     /api/v1/users/login the it redirects to the respective section for userRouter  
